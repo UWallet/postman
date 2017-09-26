@@ -1,0 +1,191 @@
+{
+	"variables": [],
+	"info": {
+		"name": "notifications_ms",
+		"_postman_id": "b1373033-2351-e9c2-b190-74ebf994df7e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post notificacion",
+			"request": {
+				"url": "http://localhost:3000/notifications/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "id_usu_10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "Asunto 10 ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Usted ha recibido una transaccion",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put notificacion",
+			"request": {
+				"url": "http://localhost:3000/notifications/-Kuif_DOp-8BC5_PksuH",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "subject",
+							"value": "editando subject",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "contenido editado",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "read",
+							"value": "true",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "delivered",
+							"value": "false",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_user",
+							"value": "id_usar1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Post para NODO 3002",
+			"request": {
+				"url": "http://192.168.99.101:3002/notifications/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "id_usu_10",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "subject",
+							"value": "Asunto 10 ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Usted ha recibido una transaccion",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Put para NODO 3002",
+			"request": {
+				"url": "http://192.168.99.101:3002/notifications/-Kuif_DOp-8BC5_PksuH",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "subject",
+							"value": "editando subject",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "contenido editado",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "read",
+							"value": "true",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "delivered",
+							"value": "false",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_user",
+							"value": "id_usar1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
