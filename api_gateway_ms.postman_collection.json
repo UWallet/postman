@@ -1,136 +1,159 @@
 {
-	"id": "f3043335-56da-4e6f-e560-fdd140ca68db",
-	"name": "api_gateway_ms",
-	"description": "",
-	"order": [
-		"f0f3a155-e482-8e4e-6d66-b936c7c903a4",
-		"7c77db46-fc63-2738-84b5-d6427d6ee223",
-		"3067317a-4840-4298-b1d1-ad937a0792f8"
-	],
-	"folders": [],
-	"folders_order": [],
-	"timestamp": 1506386647506,
-	"owner": "1895157",
-	"public": false,
-	"requests": [
+	"variables": [],
+	"info": {
+		"name": "api_gateway_ms",
+		"_postman_id": "160af12a-51cf-9aee-4a56-a82b8853ffaa",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
 		{
-			"id": "3067317a-4840-4298-b1d1-ad937a0792f8",
-			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0\nContent-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://192.168.99.101:4000/transaction_by_id?id=2",
-			"queryParams": [
-				{
-					"key": "id",
-					"value": "2",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3043335-56da-4e6f-e560-fdd140ca68db",
-			"data": [],
-			"dataMode": "raw",
-			"name": "transaction_by_id",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1506387841359,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}"
-		},
-		{
-			"id": "7c77db46-fc63-2738-84b5-d6427d6ee223",
-			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0\nContent-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://192.168.99.101:4000/transaction_by_user",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "GET",
-			"collectionId": "f3043335-56da-4e6f-e560-fdd140ca68db",
-			"data": [],
-			"dataMode": "raw",
-			"name": "transaction_by_user (current)",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1506387551964,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}"
-		},
-		{
-			"id": "f0f3a155-e482-8e4e-6d66-b936c7c903a4",
-			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY5Nzc4MzIsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.6KSHiBegxs2KwM5tPSFuVkFaxZZoIpeYOghxYoBivwI\nContent-Type: application/json\n",
-			"headerData": [
-				{
-					"key": "Authorization",
-					"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY5Nzc4MzIsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.6KSHiBegxs2KwM5tPSFuVkFaxZZoIpeYOghxYoBivwI",
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://192.168.99.101:4000/create_transaction",
-			"queryParams": [],
-			"pathVariables": {},
-			"pathVariableData": [],
-			"preRequestScript": null,
-			"method": "POST",
-			"collectionId": "f3043335-56da-4e6f-e560-fdd140ca68db",
-			"data": [],
-			"dataMode": "raw",
 			"name": "create_transaction",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1506387472181,
-			"version": 2,
-			"responses": [],
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"rawModeData": "{\n\t\"userid\": 2,\n\t\"amount\": 100\n\t\n}"
+			"request": {
+				"url": "http://192.168.99.101:4000/create_transaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY5Nzc4MzIsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.6KSHiBegxs2KwM5tPSFuVkFaxZZoIpeYOghxYoBivwI",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userid\": 2,\n\t\"amount\": 100\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "transaction_by_user (current)",
+			"request": {
+				"url": "http://192.168.99.101:4000/transaction_by_user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "transaction_by_id",
+			"request": {
+				"url": {
+					"raw": "http://192.168.99.101:4000/transaction_by_id?id=2",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"99",
+						"101"
+					],
+					"port": "4000",
+					"path": [
+						"transaction_by_id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "put_notificacion",
+			"request": {
+				"url": "http://192.168.99.101:4000/notifications/-Kuif_DOp-8BC5_PksuH",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "subject",
+							"value": "editando subject",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "contenido editado ",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "read",
+							"value": "true",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "delivered",
+							"value": "true",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "id_user",
+							"value": "id_usar1",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
 		}
 	]
 }
