@@ -1,246 +1,249 @@
 {
-	"variables": [],
-	"info": {
-		"name": "api_gateway_ms",
-		"_postman_id": "69f10a1d-679b-f977-7ce8-862ba52c4e66",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-	},
-	"item": [
+	"id": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+	"name": "api_gateway_ms copy",
+	"description": "",
+	"order": [
+		"df507b45-cbdd-1d44-38a1-90a7b8c1953d",
+		"5d3f3ed2-a7cc-a016-644f-e86ebb654365",
+		"0988fbad-ffdc-3e75-7db9-ccb2f37e3124",
+		"a36571ef-848d-2198-5ff3-5eda7678d483",
+		"845bcbc1-2606-5632-7ede-d0dbc9e4a492",
+		"76db1add-f1aa-0d83-f313-03a174334f88",
+		"14d224bb-186a-a5bf-aceb-da25ffceb589",
+		"7c943f3f-c25d-85ca-0dd6-ad1cb9484dc1",
+		"7a07efd9-3396-142b-2c77-987148a7f4f0",
+		"0bde26ca-0a7c-cb7f-b752-b7e016a43f79",
+		"ee12018d-a2c7-ccbc-99b6-1a9e205b12e7",
+		"b1147237-b427-ec9b-c5af-cbd96773ddca"
+	],
+	"folders": [],
+	"timestamp": 0,
+	"owner": 0,
+	"public": false,
+	"requests": [
 		{
-			"name": "create_transaction",
-			"request": {
-				"url": "http://192.168.99.101:4000/create_transaction",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY5Nzc4MzIsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.6KSHiBegxs2KwM5tPSFuVkFaxZZoIpeYOghxYoBivwI",
-						"description": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"userid\": 2,\n\t\"amount\": 100\n\t\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "transaction_by_user (current)",
-			"request": {
-				"url": "http://192.168.99.101:4000/transaction_by_user",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0",
-						"description": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
+			"id": "0988fbad-ffdc-3e75-7db9-ccb2f37e3124",
 			"name": "transaction_by_id",
-			"request": {
-				"url": {
-					"raw": "http://192.168.99.101:4000/transaction_by_id?id=2",
-					"protocol": "http",
-					"host": [
-						"192",
-						"168",
-						"99",
-						"101"
-					],
-					"port": "4000",
-					"path": [
-						"transaction_by_id"
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "2",
-							"equals": true,
-							"description": ""
-						}
-					],
-					"variable": []
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0",
-						"description": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}"
-				},
-				"description": ""
-			},
-			"response": []
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "GET",
+			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0\nContent-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}",
+			"pathVariables": {},
+			"url": "http://192.168.99.101:4000/transaction_by_id?id=2",
+			"responses": []
 		},
 		{
-			"name": "put_notificacion",
-			"request": {
-				"url": "http://192.168.99.101:4000/notifications/-Kuif_DOp-8BC5_PksuH",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "subject",
-							"value": "editando subject",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "content",
-							"value": "contenido editado ",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "read",
-							"value": "true",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "delivered",
-							"value": "true",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "id_user",
-							"value": "id_usar1",
-							"description": "",
-							"type": "text"
-						}
-					]
-				},
-				"description": ""
-			},
-			"response": []
+			"id": "0bde26ca-0a7c-cb7f-b752-b7e016a43f79",
+			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3NDUzNDUsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.a42wPWJgyg5fzgHnJXPt7N5E-R9qtwOjl4-_5eDVYbs\nContent-Type: application/json\n",
+			"url": "http://192.168.99.101:4000/credit_cards/transfer_money_from_card",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"data": [],
+			"dataMode": "raw",
+			"name": "transfer money from card to user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1506397381006,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "93356a6e-ac72-e347-5321-c765c2858ab8",
+			"rawModeData": "{\n\t\"cardId\": 1,\n\t\"money\": 10\n}"
 		},
 		{
-			"name": "Register User",
-			"request": {
-				"url": "http://192.168.99.101:4000/users/register",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"user\" : {\n\t\t\"email\": \"loisferval97@hotmail.com\",\n\t\t\"identification\": 1434502222,\n\t\t\"firstName\": \"asdasd\",\n\t\t\"lastName\": \"asd\",\n\t    \"password\": \"foobar\", \n\t    \"password_confirmation\": \"foobar\"\n\t }\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
-			"name": "User login",
-			"request": {
-				"url": "http://192.168.99.101:4000/users/login",
-				"method": "POST",
-				"header": [
-					{
-						"key": "email",
-						"value": "\"user@example.com\"",
-						"description": "",
-						"disabled": true
-					},
-					{
-						"key": "password",
-						"value": "\"foobar\"",
-						"description": "",
-						"disabled": true
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					},
-					{
-						"key": "X-Amz-Date",
-						"value": "20170910T201359Z",
-						"description": ""
-					},
-					{
-						"key": "Authorization",
-						"value": "AWS4-HMAC-SHA256 Credential=/20170910/us-east-1/execute-api/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=450be534535e7f5afc8f58805a5d82b4955fcb42769c5dad463a19a083570d43",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"email\": \"loisferval97@hotmail.3com\",\n\t\"password\": \"foobar\"\n}"
-				},
-				"description": ""
-			},
-			"response": []
-		},
-		{
+			"id": "14d224bb-186a-a5bf-aceb-da25ffceb589",
 			"name": "update password user",
-			"request": {
-				"url": "http://192.168.99.101:4000/users/update",
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Authorization",
-						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MDEwNTMsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.oTpwUopQRHYEtasRAqLkrJHEXtKwbYLojRNCkk4yifc",
-						"description": ""
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n\t\"password\": \"foobar\",\n\t\"password_confirmation\": \"foobar\"\n}"
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "PUT",
+			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MDEwNTMsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.oTpwUopQRHYEtasRAqLkrJHEXtKwbYLojRNCkk4yifc\nContent-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"password\": \"foobar\",\n\t\"password_confirmation\": \"foobar\"\n}",
+			"url": "http://192.168.99.101:4000/users/update",
+			"responses": []
+		},
+		{
+			"id": "5d3f3ed2-a7cc-a016-644f-e86ebb654365",
+			"name": "transaction_by_user (current)",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "GET",
+			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MTk0MzcsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.wTd9PVAetlaOfgC9ce-zKb_VEMCX6UiS5Kw_Xl2BvD0\nContent-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"userid\": 2,\n\t\"amount\": 10\n\t\n}",
+			"url": "http://192.168.99.101:4000/transaction_by_user",
+			"responses": []
+		},
+		{
+			"id": "76db1add-f1aa-0d83-f313-03a174334f88",
+			"name": "User login",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "POST",
+			"headers": "email: \"user@example.com\"\npassword: \"foobar\"\nContent-Type: application/json\nX-Amz-Date: 20170910T201359Z\nAuthorization: AWS4-HMAC-SHA256 Credential=/20170910/us-east-1/execute-api/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=450be534535e7f5afc8f58805a5d82b4955fcb42769c5dad463a19a083570d43",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"email\": \"loisferval97@hotmail.3com\",\n\t\"password\": \"foobar\"\n}",
+			"url": "http://192.168.99.101:4000/users/login",
+			"responses": []
+		},
+		{
+			"id": "7a07efd9-3396-142b-2c77-987148a7f4f0",
+			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3NDUzNDUsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.a42wPWJgyg5fzgHnJXPt7N5E-R9qtwOjl4-_5eDVYbs\n",
+			"url": "http://192.168.99.101:4000/credit_cards",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506397901911,
+			"name": "get all the credit cards of the current user",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"responses": []
+		},
+		{
+			"id": "7c943f3f-c25d-85ca-0dd6-ad1cb9484dc1",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY4MTQ5NDIsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.nhO6j4XeMXQnqabozHuVmsSFHH8XCwwpBKGsiXju6T4\n",
+			"url": "http://192.168.99.101:4000/credit_cards/registercard",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506397920007,
+			"name": "create a new credit card for the current user",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"responses": [],
+			"rawModeData": "{\n\t\"number\": 3434325543234242,\n\t\"amount\": 5005550,\n\t\"expiration_month\": 5,\n\t\"expiration_year\": 2031\n}"
+		},
+		{
+			"id": "845bcbc1-2606-5632-7ede-d0dbc9e4a492",
+			"name": "Register User",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "POST",
+			"headers": "Content-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"user\" : {\n\t\t\"email\": \"loisferval97@hotmail.com\",\n\t\t\"identification\": 1434502222,\n\t\t\"firstName\": \"asdasd\",\n\t\t\"lastName\": \"asd\",\n\t    \"password\": \"foobar\", \n\t    \"password_confirmation\": \"foobar\"\n\t }\n}",
+			"url": "http://192.168.99.101:4000/users/register",
+			"responses": []
+		},
+		{
+			"id": "a36571ef-848d-2198-5ff3-5eda7678d483",
+			"name": "put_notificacion",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "PUT",
+			"headers": "Content-Type: application/x-www-form-urlencoded",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "subject",
+					"value": "editando subject",
+					"description": "",
+					"type": "text"
 				},
-				"description": ""
-			},
-			"response": []
+				{
+					"key": "content",
+					"value": "contenido editado ",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "read",
+					"value": "true",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "delivered",
+					"value": "true",
+					"description": "",
+					"type": "text"
+				},
+				{
+					"key": "id_user",
+					"value": "id_usar1",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"rawModeData": "",
+			"url": "http://192.168.99.101:4000/notifications/-Kuif_DOp-8BC5_PksuH",
+			"responses": []
+		},
+		{
+			"id": "b1147237-b427-ec9b-c5af-cbd96773ddca",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MjEzMDMsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.suOc6ThgjjKEhF0Kkx6ka99EsdSZKfmb3KPR8KskWoo\n",
+			"url": "http://192.168.99.101:4000/credit_cards/?id=1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506397908010,
+			"name": "delete a credit card with the id=1",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "df507b45-cbdd-1d44-38a1-90a7b8c1953d",
+			"name": "create_transaction",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"method": "POST",
+			"headers": "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY5Nzc4MzIsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.6KSHiBegxs2KwM5tPSFuVkFaxZZoIpeYOghxYoBivwI\nContent-Type: application/json",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n\t\"userid\": 2,\n\t\"amount\": 100\n\t\n}",
+			"url": "http://192.168.99.101:4000/create_transaction",
+			"responses": []
+		},
+		{
+			"id": "ee12018d-a2c7-ccbc-99b6-1a9e205b12e7",
+			"headers": "Content-Type: application/json\nAuthorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MjEzMDMsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.suOc6ThgjjKEhF0Kkx6ka99EsdSZKfmb3KPR8KskWoo\n",
+			"url": "http://192.168.99.101:4000/credit_cards/?id=1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1506397914470,
+			"name": "update the credit card with id=1",
+			"description": "",
+			"collectionId": "1f9e6ab7-7cd4-70ea-296a-3ead44caef75",
+			"responses": [],
+			"rawModeData": "{\n\t\"expiration_year\": 2057\n}"
 		}
 	]
 }
