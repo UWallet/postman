@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "api_gateway_ms",
-		"_postman_id": "160af12a-51cf-9aee-4a56-a82b8853ffaa",
+		"_postman_id": "69f10a1d-679b-f977-7ce8-862ba52c4e66",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -150,6 +150,93 @@
 							"type": "text"
 						}
 					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"url": "http://192.168.99.101:4000/users/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\" : {\n\t\t\"email\": \"loisferval97@hotmail.com\",\n\t\t\"identification\": 1434502222,\n\t\t\"firstName\": \"asdasd\",\n\t\t\"lastName\": \"asd\",\n\t    \"password\": \"foobar\", \n\t    \"password_confirmation\": \"foobar\"\n\t }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User login",
+			"request": {
+				"url": "http://192.168.99.101:4000/users/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "\"user@example.com\"",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "\"foobar\"",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "X-Amz-Date",
+						"value": "20170910T201359Z",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "AWS4-HMAC-SHA256 Credential=/20170910/us-east-1/execute-api/aws4_request, SignedHeaders=content-length;content-type;host;x-amz-date, Signature=450be534535e7f5afc8f58805a5d82b4955fcb42769c5dad463a19a083570d43",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"loisferval97@hotmail.3com\",\n\t\"password\": \"foobar\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update password user",
+			"request": {
+				"url": "http://192.168.99.101:4000/users/update",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1MDY3MDEwNTMsImlzcyI6IndhbGxldCIsImF1ZCI6ImNsaWVudCJ9.oTpwUopQRHYEtasRAqLkrJHEXtKwbYLojRNCkk4yifc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\": \"foobar\",\n\t\"password_confirmation\": \"foobar\"\n}"
 				},
 				"description": ""
 			},
