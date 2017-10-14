@@ -1,0 +1,46 @@
+{
+	"id": "06e7c738-b8e9-3a79-e502-db3acb12789f",
+	"name": "extracts",
+	"description": "",
+	"order": [
+		"bae631ad-01bd-8c0f-2dfe-d2829a586f42"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1508019939223,
+	"owner": "1895720",
+	"public": false,
+	"requests": [
+		{
+			"id": "bae631ad-01bd-8c0f-2dfe-d2829a586f42",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://192.168.99.101:3004/json",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "06e7c738-b8e9-3a79-e502-db3acb12789f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://192.168.99.101:3004/json",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1508019941196,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"total_send\": 1,\n    \"list_send\": [\n        {\n            \"id\": 5,\n            \"useridgiving\": 2,\n            \"useridreceiving\": 1,\n            \"amount\": 12344444,\n            \"state\": \"initial\",\n            \"created_at\": \"2017-10-14T21:28:17.000Z\",\n            \"updated_at\": \"2017-10-14T21:28:17.000Z\"\n        }\n    ],\n    \"total_receive\": 4,\n    \"list_receive\": [\n        {\n            \"id\": 1,\n            \"useridgiving\": 1,\n            \"useridreceiving\": 2,\n            \"amount\": 1234,\n            \"state\": \"initial\",\n            \"created_at\": \"2017-10-14T21:26:47.000Z\",\n            \"updated_at\": \"2017-10-14T21:26:47.000Z\"\n        },\n        {\n            \"id\": 2,\n            \"useridgiving\": 1,\n            \"useridreceiving\": 2,\n            \"amount\": 1234,\n            \"state\": \"initial\",\n            \"created_at\": \"2017-10-14T21:26:48.000Z\",\n            \"updated_at\": \"2017-10-14T21:26:48.000Z\"\n        },\n        {\n            \"id\": 3,\n            \"useridgiving\": 1,\n            \"useridreceiving\": 2,\n            \"amount\": 1234,\n            \"state\": \"initial\",\n            \"created_at\": \"2017-10-14T21:26:49.000Z\",\n            \"updated_at\": \"2017-10-14T21:26:49.000Z\"\n        },\n        {\n            \"id\": 4,\n            \"useridgiving\": 1,\n            \"useridreceiving\": 2,\n            \"amount\": 1234,\n            \"state\": \"initial\",\n            \"created_at\": \"2017-10-14T21:26:50.000Z\",\n            \"updated_at\": \"2017-10-14T21:26:50.000Z\"\n        }\n    ],\n    \"total_load\": 0,\n    \"list_load\": []\n}"
+		}
+	]
+}
